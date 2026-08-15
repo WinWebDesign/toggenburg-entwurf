@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gasthaus Sternen Degersheim | Restaurant, Bar & Gästezimmer im Toggenburg</title>
+<meta name="description" content="Gasthaus Sternen in Degersheim: gutbürgerliche Schweizer Küche mit 40 Sitzplätzen, Hühnerstall Bar, Gartenterrasse und sieben Gästezimmer. Seit 1903 am Platz. Hauptstrasse 70, 071 565 60 76.">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="de_CH">
+<meta property="og:title" content="Gasthaus Sternen Degersheim | Restaurant, Bar & Gästezimmer">
+<meta property="og:description" content="Gutbürgerliche Schweizer Küche, Hühnerstall Bar und sieben Gästezimmer im Toggenburg. Seit 1903.">
+<meta property="og:image" content="assets/img/haus.webp">
+<meta name="theme-color" content="#12100E">
+<link rel="icon" href="assets/img/stern.png" type="image/png">
+<link rel="preload" as="image" href="assets/img/haus.webp" fetchpriority="high">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+<!-- ══════════ Kornfilter über allem ══════════ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+<!-- ══════════ Ladevorhang ══════════ -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Seite wird geladen">
+  <div class="loader__panels" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="loader__inner">
+    <svg class="loader__star" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M50 4 L61.8 35.5 L95 37.5 L69 58.5 L77.5 91 L50 72.5 L22.5 91 L31 58.5 L5 37.5 L38.2 35.5 Z"
+            fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+    </svg>
+    <div class="loader__word"><span>S</span><span>T</span><span>E</span><span>R</span><span>N</span><span>E</span><span>N</span></div>
+    <div class="loader__num"><b id="loaderNum">0</b><i>%</i></div>
+  </div>
+</div>
+
+<!-- ══════════ Navigation ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-cursor="link">
+    <img src="assets/img/stern.png" alt="" class="nav__star" width="118" height="168">
+    <span class="nav__name">Sternen<em>Degersheim</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Hauptnavigation">
+    <a href="#kueche" data-cursor="link">Küche</a>
+    <a href="#raeume" data-cursor="link">Räume</a>
+    <a href="#zimmer" data-cursor="link">Zimmer</a>
+    <a href="#bar" data-cursor="link">Bar</a>
+    <a href="#geschichte" data-cursor="link">1903</a>
+  </nav>
+  <a class="btn btn--sm nav__cta" href="#kontakt" data-cursor="link">
+    <span>Tisch reservieren</span>
+  </a>
+  <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer">
+    <i></i><i></i>
+  </button>
+</header>
+
+<!-- Mobile-Schublade -->
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="Mobile Navigation">
+    <a href="#kueche">Küche</a><a href="#raeume">Räume</a><a href="#zimmer">Zimmer</a>
+    <a href="#bar">Bar</a><a href="#geschichte">1903</a><a href="#kontakt">Kontakt</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+41715656076">071 565 60 76</a>
+    <span>Hauptstrasse 70, 9113 Degersheim</span>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ══════════════════ 1 · HERO ══════════════════ -->
+<section class="hero" id="hero">
+  <canvas class="hero__gl" id="heroGL" aria-hidden="true"></canvas>
+  <img class="hero__fallback" id="heroFallback" src="assets/img/haus.webp"
+       alt="Das Gasthaus Sternen an der Hauptstrasse 70 in Degersheim: ein Riegelhaus mit dunkelroten Fachwerkbalken, cremefarbenen Feldern und Blumenkästen an allen Fenstern.">
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="hero__type">
+    <p class="hero__brow"><span>Degersheim</span><i>·</i><span>Toggenburg</span><i>·</i><span>Kanton St.&nbsp;Gallen</span></p>
+    <h1 class="hero__h1" aria-label="Sternen">
+      <span class="ch" style="--i:0">S</span><span class="ch" style="--i:1">t</span><span class="ch" style="--i:2">e</span><span class="ch" style="--i:3">r</span><span class="ch" style="--i:4">n</span><span class="ch" style="--i:5">e</span><span class="ch" style="--i:6">n</span>
+    </h1>
+    <p class="hero__sub">
+      <span class="lift">Gasthaus seit <b>1903</b>.</span>
+      <span class="lift">Gutbürgerlich gekocht,</span>
+      <span class="lift">nicht gutbürgerlich gedacht.</span>
+    </p>
+  </div>
+
+  <div class="hero__foot">
+    <div class="hero__now" id="heroNow">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="openState">Öffnungszeiten prüfen</span>
+    </div>
+    <a class="hero__scroll" href="#manifest" data-cursor="link" aria-label="Weiter zum Inhalt">
+      <span>Eintreten</span>
+      <svg viewBox="0 0 24 44" aria-hidden="true"><path d="M12 2v34m0 0-7-7m7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+    </a>
+    <p class="hero__addr">Hauptstrasse&nbsp;70<br>CH-9113&nbsp;Degersheim</p>
+  </div>
+
+  <svg class="hero__star" viewBox="0 0 100 100" aria-hidden="true">
+    <path d="M50 4 L61.8 35.5 L95 37.5 L69 58.5 L77.5 91 L50 72.5 L22.5 91 L31 58.5 L5 37.5 L38.2 35.5 Z"
+          fill="none" stroke="currentColor" stroke-width="1"/>
+  </svg>
+</section>
+
+<!-- ══════════════════ 2 · MANIFEST ══════════════════ -->
+<section class="manifest" id="manifest">
+  <p class="sect-tag"><i></i>Willkommen</p>
+  <p class="manifest__text" data-fill>
+    Ein Gasthaus ist kein Betrieb. Es ist der Raum, in dem ein Dorf sich trifft — an der Theke,
+    am Stammtisch, im Stöbli, auf der Terrasse. Wir kochen mit Schweizer Fleisch, wir schenken
+    ehrlich ein, und wir schliessen erst, wenn das letzte Gespräch fertig ist.
+  </p>
+  <div class="manifest__meta">
+    <div><b>40</b><span>Sitzplätze in der Gaststube</span></div>
+    <div><b>7</b><span>Gästezimmer, jedes mit eigenem Namen</span></div>
+    <div><b>1903</b><span>steht der Sternen an diesem Platz</span></div>
+    <div><b>3</b><span>Nächte Bar: Do, Fr, Sa ab 21.30</span></div>
+  </div>
+</section>
+
+<!-- ══════════════════ 3 · RÄUME (horizontal) ══════════════════ -->
+<section class="rooms" id="raeume">
+  <div class="rooms__pin">
+    <header class="rooms__head">
+      <div>
+        <p class="sect-tag light"><i></i>Fünf Räume</p>
+        <h2 class="rooms__title">Bitte<br><em>tretet ein.</em></h2>
+      </div>
+      <p class="rooms__hint" aria-hidden="true">scrollen →</p>
+    </header>
+
+    <div class="rooms__track" id="roomsTrack">
+      <article class="room" data-cursor="view">
+        <div class="room__media"><img src="assets/img/gaststube-1.webp" alt="Die Gaststube des Gasthauses Sternen mit langen Holztischen, Sitzbank an der Fensterfront und Spitzenvorhängen." loading="lazy"></div>
+        <div class="room__body">
+          <span class="room__no">01</span>
+          <h3>Gaststube</h3>
+          <p>40 Sitzplätze, sanft renoviert. Das Herzstück des Hauses — und der Ort, an dem das Mittagsmenü serviert wird.</p>
+        </div>
+        <div class="room__aside"><img src="assets/img/tafel-dinge.webp" alt="Wandtafel in der Gaststube mit der handgeschriebenen Zeile: Alle guten und schönen Dinge beginnen mit S." loading="lazy"></div>
+      </article>
+
+      <article class="room" data-cursor="view">
+        <div class="room__media"><img src="assets/img/stoebli-1.webp" alt="Das Tegerscher Stöbli mit weiss gedeckten Tischen, Orientteppich und rundem Wandspiegel." loading="lazy"></div>
+        <div class="room__body">
+          <span class="room__no">02</span>
+          <h3>Tegerscher&nbsp;Stöbli</h3>
+          <p>Von der Gaststube abgetrennt, frisch renoviert. Für ein ruhiges Nachtessen — oder für geschlossene Gesellschaften, wenn man will gleich mit der Bar dazu.</p>
+        </div>
+        <div class="room__aside"><img src="assets/img/stoebli-schild.webp" alt="Das bemalte Blechschild mit der goldenen Aufschrift Tegerscher Stöbli über dem Eingang." loading="lazy"></div>
+      </article>
+
+      <article class="room" data-cursor="view">
+        <div class="room__media"><img src="assets/img/terrasse-1.webp" alt="Die Gartenterrasse des Sternen mit grünen Sonnenschirmen und Tischen auf Steinplatten." loading="lazy"></div>
+        <div class="room__body">
+          <span class="room__no">03</span>
+          <h3>Gartenterrasse</h3>
+          <p>Draussen sitzen und geniessen. Garten, Sonne — und der Schopfgarten gleich daneben.</p>
+        </div>
+        <div class="room__aside"><img src="assets/img/schopfgarten.webp" alt="Der Schopfgarten mit begrünter Holzwand, gelben Wagenrädern und Kräuterbeeten." loading="lazy"></div>
+      </article>
+
+      <article class="room room--dark" data-cursor="view">
+        <div class="room__media"><img src="assets/img/bar-tuer.webp" alt="Der Eingang zur Hühnerstall Bar mit beleuchtetem Schriftzug und zwei Sternen über der Holztür." loading="lazy"></div>
+        <div class="room__body">
+          <span class="room__no">04</span>
+          <h3>Hühnerstall&nbsp;Bar</h3>
+          <p>Eine Bar, wie es sie nicht mehr viele gibt. Musik, die man geniessen kann, ohne sich anschreien zu müssen. Do, Fr, Sa ab 21.30.</p>
+        </div>
+        <div class="room__aside"><img src="assets/img/bar-whisky.webp" alt="Whiskyflaschen auf dem beleuchteten Bord der Hühnerstall Bar, darunter Säntis Malt." loading="lazy"></div>
+      </article>
+
+      <article class="room" data-cursor="view">
+        <div class="room__media"><img src="assets/img/sitzung.webp" alt="Das Sitzungszimmer mit hellen Tischen, Stühlen und Whiteboard." loading="lazy"></div>
+        <div class="room__body">
+          <span class="room__no">05</span>
+          <h3>Sitzungszimmer</h3>
+          <p>Für 4 bis 12 Personen. 4 Tische, 14 Stühle, Magnet-Whiteboard, TV mit USB und HDMI, Tee- und Kaffeemaschine.</p>
+        </div>
+        <div class="room__aside"><img src="assets/img/stoebli-herzen.webp" alt="Dekorierte Wand mit Stoffherzen und einer Tafel mit der Aufschrift Herzlich willkommen." loading="lazy"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 4 · KÜCHE / TELLER ══════════════════ -->
+<section class="kitchen" id="kueche">
+  <div class="kitchen__stage" id="plateStage" aria-hidden="true">
+    <figure class="plate" data-depth="1.35" data-spin="23.7" data-dir="1"  data-tilt="-9"  style="--x:9%;  --y:14%; --s:.62">
+      <span class="plate__in"><img src="assets/img/teller-1.webp" alt=""></span></figure>
+    <figure class="plate" data-depth=".55" data-spin="41.2" data-dir="-1" data-tilt="6"   style="--x:74%; --y:9%;  --s:.94">
+      <span class="plate__in"><img src="assets/img/teller-2.webp" alt=""></span></figure>
+    <figure class="plate plate--photo" data-depth="1.9" data-spin="33.4" data-dir="-1" data-tilt="14"  style="--x:80%; --y:62%; --s:.5">
+      <span class="plate__in"><img src="assets/img/gaststube-brunch.webp" alt=""></span></figure>
+    <figure class="plate plate--photo" data-depth=".85" data-spin="52.1" data-dir="1"  data-tilt="-4"  style="--x:4%; --y:66%; --s:.72">
+      <span class="plate__in"><img src="assets/img/stoebli-bankett.webp" alt=""></span></figure>
+    <figure class="plate plate--photo" data-depth="2.4" data-spin="18.6" data-dir="1"  data-tilt="21"  style="--x:44%; --y:88%; --s:.34">
+      <span class="plate__in"><img src="assets/img/tafel-menu.webp" alt=""></span></figure>
+    <figure class="plate plate--photo" data-depth="1.6" data-spin="46.3" data-dir="-1" data-tilt="-16" style="--x:60%; --y:4%; --s:.3">
+      <span class="plate__in"><img src="assets/img/stoebli-wein.webp" alt=""></span></figure>
+  </div>
+
+  <div class="kitchen__mid">
+    <p class="sect-tag"><i></i>Die Küche</p>
+    <h2 class="kitchen__h2">
+      <span class="lift">Bei uns könnt ihr</span>
+      <span class="lift"><em>die Schweiz</em></span>
+      <span class="lift">schmecken.</span>
+    </h2>
+    <p class="kitchen__lead">
+      Gutbürgerliche Schweizer Küche, gekocht ausschliesslich mit ausgewähltem Schweizer Fleisch.
+      Mittags das Menü, abends à&nbsp;la&nbsp;carte — und auf Wunsch ein Menüvorschlag für das Fest,
+      das ihr plant.
+    </p>
+    <div class="kitchen__acts">
+      <a class="btn" href="#kontakt" data-cursor="link"><span>Tisch reservieren</span></a>
+      <a class="btn btn--ghost" href="#kontakt" data-cursor="link"><span>Speisekarte ansehen</span></a>
+    </div>
+    <ul class="kitchen__list">
+      <li><span>Mittagsmenü</span><i></i><span>Mo – Sa, 11.00 – 14.00</span></li>
+      <li><span>À la carte</span><i></i><span>Mo – Sa, 17.00 – 23.00</span></li>
+      <li><span>Bankett &amp; Feste</span><i></i><span>Menüvorschläge auf Anfrage</span></li>
+      <li><span>Sonntag</span><i></i><span>Ruhetag</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════ 5 · SIEBEN STERNE / ZIMMER ══════════════════ -->
+<section class="stars" id="zimmer">
+  <header class="stars__head">
+    <p class="sect-tag light"><i></i>Übernachten</p>
+    <h2 class="stars__title">Sieben Zimmer.<br><em>Sieben Sterne.</em></h2>
+    <p class="stars__lead">
+      Kein Zimmer trägt eine Nummer. Jedes hat einen Namen, eine Farbe und einen eigenen Stern —
+      und alle haben TV und WLAN. Dazu die Ferienwohnung <em>Sternenstunde</em>.
+    </p>
+  </header>
+
+  <div class="constellation" id="constellation">
+    <svg class="constellation__lines" id="lines" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+    <!-- Die Namen standen als Dunkelgrau fest in den Bilddateien und waren auf dem
+         weinroten Grund unlesbar. Sie sind jetzt echter Text in Creme. -->
+    <button class="star-node" data-room="wolke7"      style="--cx:14%; --cy:22%; --d:1.7" data-cursor="view">
+      <img src="assets/img/star-wolke7.webp" alt=""><span class="star-node__name">Wolke 7</span></button>
+    <button class="star-node" data-room="immergruen"  style="--cx:35%; --cy:9%;  --d:.9"  data-cursor="view">
+      <img src="assets/img/star-immergruen.webp" alt=""><span class="star-node__name">Immergrün</span></button>
+    <button class="star-node" data-room="almrausch"   style="--cx:58%; --cy:26%; --d:2.2" data-cursor="view">
+      <img src="assets/img/star-almrausch.webp" alt=""><span class="star-node__name">Almrausch</span></button>
+    <button class="star-node" data-room="easyrider"   style="--cx:83%; --cy:14%; --d:1.2" data-cursor="view">
+      <img src="assets/img/star-easyrider.webp" alt=""><span class="star-node__name">Easy Rider</span></button>
+    <button class="star-node" data-room="kirschbluete" style="--cx:24%; --cy:64%; --d:1.5" data-cursor="view">
+      <img src="assets/img/star-kirschbluete.webp" alt=""><span class="star-node__name">Kirschblüte</span></button>
+    <button class="star-node" data-room="shabbychic"  style="--cx:50%; --cy:78%; --d:.7"  data-cursor="view">
+      <img src="assets/img/star-shabbychic.webp" alt=""><span class="star-node__name">Shabby Chic</span></button>
+    <!-- Für „Playboy" liegt kein Sternlogo vor — hier als SVG in derselben Formensprache
+         nachgebaut. [KUNDE LIEFERT: Originaldatei sd-zimmer_playboy.png] -->
+    <button class="star-node star-node--svg" data-room="playboy" style="--cx:75%; --cy:60%; --d:1.9" data-cursor="view">
+      <svg viewBox="0 0 100 96" aria-hidden="true">
+        <path d="M50 6 L61.3 37.2 L94.5 39.1 L68.6 59.9 L77.1 92 L50 73.7 L22.9 92 L31.4 59.9 L5.5 39.1 L38.7 37.2 Z" fill="#C1954A"/>
+      </svg><span class="star-node__name">Playboy</span></button>
+
+    <figure class="constellation__peek" id="peek" aria-hidden="true">
+      <img id="peekImg" src="assets/img/zi-wolke7.webp" alt="">
+      <figcaption id="peekCap">Wolke 7</figcaption>
+    </figure>
+  </div>
+
+  <div class="rooms-grid">
+    <article class="rcard" style="--rot:-1.6deg"><div class="rcard__img"><img src="assets/img/zi-wolke7.webp" alt="Das Zimmer Wolke 7 mit hellblauen Wänden, weissem Bett und blau-weiss kariertem Teppich." loading="lazy"></div><h3>Wolke 7</h3><p>Hellblau, luftig, mit Lieblingsplatz-Schild an der Wand.</p></article>
+    <article class="rcard" style="--rot:1.1deg"><div class="rcard__img"><img src="assets/img/zi-immergruen.webp" alt="Das Zimmer Immergrün mit grüner Wand, weissem Holzbett und grüner Bettwäsche." loading="lazy"></div><h3>Immergrün</h3><p>Grün in allen Schattierungen, hell und ruhig.</p></article>
+    <article class="rcard" style="--rot:-.7deg"><div class="rcard__img"><img src="assets/img/zi-almrausch.webp" alt="Das Zimmer Almrausch mit einer Fototapete voller Alpenrosen hinter dem Bett." loading="lazy"></div><h3>Almrausch</h3><p>Alpenrosen an der Wand, rot-weiss kariert im Bett.</p></article>
+    <article class="rcard" style="--rot:2deg"><div class="rcard__img"><img src="assets/img/zi-easyrider.webp" alt="Das Zimmer Easy Rider mit Tierbildern an der Wand, Metallbett und Schreibtisch." loading="lazy"></div><h3>Easy Rider</h3><p>Werkstattlampen, Metall, Holz — und ein Motorrad im Regal.</p></article>
+    <article class="rcard" style="--rot:-1.9deg"><div class="rcard__img"><img src="assets/img/zi-kirschbluete.webp" alt="Das Zimmer Kirschblüte mit Blütenbettwäsche und pinkfarbenen Akzenten." loading="lazy"></div><h3>Kirschblüte</h3><p>Blüten auf dem Bett, Pink als Akzent.</p></article>
+    <article class="rcard" style="--rot:.6deg"><div class="rcard__img"><img src="assets/img/zi-shabbychic.webp" alt="Das Zimmer Shabby Chic in Weiss mit Sessel, Schminktisch und Vintage-Spiegel." loading="lazy"></div><h3>Shabby Chic</h3><p>Weiss, Vintage, Sessel am Fenster.</p></article>
+    <article class="rcard rcard--fewo" style="--rot:-1.2deg"><div class="rcard__img"><img src="assets/img/fewo-1.webp" alt="Die Ferienwohnung Sternenstunde mit Wohnbereich, Küche und Esstisch." loading="lazy"></div><h3>Sternenstunde</h3><p>Die Ferienwohnung — für alle, die länger bleiben.</p></article>
+  </div>
+</section>
+
+<!-- ══════════════════ 6 · BAR ══════════════════ -->
+<section class="bar" id="bar">
+  <div class="bar__glow" id="barGlow" aria-hidden="true"></div>
+  <div class="bar__bg"><img src="assets/img/bar-raum.webp" alt="" loading="lazy"></div>
+
+  <div class="bar__marquee" aria-hidden="true">
+    <div class="bar__marquee-in" id="marqueeA">
+      <span>Gute Vibes</span><i>✦</i><span>Gute Drinks</span><i>✦</i><span>Gute Gespräche</span><i>✦</i>
+      <span>Gute Vibes</span><i>✦</i><span>Gute Drinks</span><i>✦</i><span>Gute Gespräche</span><i>✦</i>
+    </div>
+  </div>
+
+  <div class="bar__grid">
+    <div class="bar__copy">
+      <p class="sect-tag dark"><i></i>Hühnerstall Bar</p>
+      <h2 class="bar__h2">Es gibt sie<br>wirklich —<br><em>die&nbsp;Bar.</em></h2>
+      <p>Die Bar, in der man gute Musik geniessen kann, ohne dass man sich anschreien muss.
+        Ein Ort, an dem Stil auf Gemütlichkeit trifft, und wo Gespräche genauso viel Platz
+        haben wie ein perfekt gemixter Drink.</p>
+      <p class="bar__nala">Unsere Barkeeperin <b>Nala</b> mixt klassische Cocktails und kreative
+        Neuinterpretationen.</p>
+      <div class="bar__hours">
+        <div><b>Do</b><span>21.30 – 24.00</span></div>
+        <div><b>Fr</b><span>21.30 – 02.00</span></div>
+        <div><b>Sa</b><span>21.30 – 02.00</span></div>
+      </div>
+    </div>
+    <div class="bar__stack">
+      <figure style="--r:-3.2deg"><img src="assets/img/bar-gin.webp" alt="Gin- und Spirituosenflaschen auf der Theke der Hühnerstall Bar." loading="lazy"></figure>
+      <figure style="--r:2.4deg"><img src="assets/img/bar-jukebox.webp" alt="Barbereich mit beleuchteter Jukebox, Barhockern und einem hölzernen Stern an der Wand." loading="lazy"></figure>
+      <figure style="--r:-1.1deg"><img src="assets/img/bar-wand.webp" alt="Die Wand der Hühnerstall Bar mit grossem Schriftzug und Stern." loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 7 · GESCHICHTE 1903 ══════════════════ -->
+<section class="history" id="geschichte">
+  <div class="history__media">
+    <figure class="postcard" id="postcard">
+      <img src="assets/img/1903.webp" alt="Historische Postkarte Gruss aus Degersheim von 1903 mit dem Gasthaus zum Sternen und dem Gasthaus zum Schäfle." loading="lazy">
+      <figcaption>Postkarte «Gruss aus Degersheim», 1903 · Staatsarchiv St.&nbsp;Gallen</figcaption>
+    </figure>
+  </div>
+  <div class="history__copy">
+    <p class="sect-tag"><i></i>Geschichte</p>
+    <h2 class="history__h2">Auf dieser Postkarte<br>steht schon <em>unser Haus.</em></h2>
+    <p class="history__lead">
+      1903 verschickt jemand aus Degersheim einen Gruss. Zwei Gasthäuser sind darauf abgebildet.
+      Eines davon ist der Sternen — und er steht heute noch am selben Platz, an der Hauptstrasse&nbsp;70.
+    </p>
+    <ol class="timeline">
+      <li><b>1903</b><span>Der Sternen ist auf der Ansichtskarte «Gruss aus Degersheim» abgebildet.</span></li>
+      <li><b>Renovation</b><span>Gaststube, Stöbli und sämtliche Gästezimmer werden erneuert — der Charme bleibt.</span></li>
+      <li><b>2024</b><span>Rikard Pergega aus Bütschwil übernimmt den Sternen und öffnet ihn wieder.</span></li>
+      <li><b>Heute</b><span>Restaurant, Bar, sieben Zimmer und eine Ferienwohnung unter einem Dach.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══════════════════ 8 · GASTGEBER ══════════════════ -->
+<section class="hosts">
+  <figure class="hosts__pic">
+    <img src="assets/img/gastgeber.webp" alt="Armenda und Rikard Pergega in der Küche des Gasthauses Sternen." loading="lazy">
+  </figure>
+  <div class="hosts__copy">
+    <p class="sect-tag"><i></i>Die Gastgeber</p>
+    <blockquote>
+      <p>«Mein Ziel ist, dass die guten Zeiten wieder&nbsp;kommen.»</p>
+      <cite>Rikard Pergega, Gastgeber</cite>
+    </blockquote>
+    <p class="hosts__text">
+      Armenda und Rikard Pergega führen den Sternen. Sie stehen selbst in der Küche und hinter der
+      Theke — und sie haben das Haus wieder geöffnet, als es zu war.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════ 9 · DIE GRUPPE ══════════════════ -->
+<section class="group" id="gruppe">
+  <header class="group__head">
+    <p class="sect-tag light"><i></i>Zwei Häuser</p>
+    <h2 class="group__title">Wir sind nicht nur<br><em>ein Haus.</em></h2>
+    <p>Die Familie Pergega führt im Toggenburg zwei Häuser. Wer im einen isst, kann im anderen
+      schlafen — und umgekehrt.</p>
+  </header>
+  <div class="group__cards">
+    <article class="gcard gcard--a" data-cursor="view">
+      <div class="gcard__img"><img src="assets/img/haus.webp" alt="Das Gasthaus Sternen in Degersheim von aussen." loading="lazy"></div>
+      <div class="gcard__body">
+        <h3>Gasthaus Sternen</h3>
+        <p class="gcard__place">Degersheim</p>
+        <ul><li>Restaurant, 40 Sitzplätze</li><li>Hühnerstall Bar</li><li>7 Gästezimmer + Ferienwohnung</li><li>Gartenterrasse &amp; Sitzungszimmer</li></ul>
+        <p class="gcard__tel">071 565 60 76</p>
+      </div>
+    </article>
+    <article class="gcard gcard--b" data-cursor="view">
+      <div class="gcard__img"><img src="assets/img/sonne-haus.webp" alt="Das Gästehaus Sonne in Bütschwil von aussen." loading="lazy"></div>
+      <div class="gcard__body">
+        <h3>Gästehaus Sonne</h3>
+        <p class="gcard__place">Bütschwil</p>
+        <ul><li>14 Zimmer, ab CHF 106</li><li>24-Stunden-Check-in-Automat</li><li>Restaurant &amp; Frühstücksbuffet</li><li>Teilweise Bergsicht</li></ul>
+        <p class="gcard__tel">071 980 02 00</p>
+        <p class="gcard__go"><a class="stretch" href="../sonne/index.html">Zur Sonne →</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════════ 10 · KONTAKT ══════════════════ -->
+<section class="contact" id="kontakt">
+  <div class="contact__cta">
+    <h2 class="contact__h2">Tisch frei?<br><em>Meistens ja.</em></h2>
+    <div class="contact__acts">
+      <a class="btn btn--big" href="tel:+41715656076" data-cursor="link"><span>071 565 60 76</span></a>
+      <a class="btn btn--ghost btn--big" href="mailto:info@sternen-degersheim.ch" data-cursor="link"><span>E-Mail schreiben</span></a>
+    </div>
+  </div>
+
+  <div class="contact__cols">
+    <div class="ccol">
+      <h3>Öffnungszeiten</h3>
+      <table class="hours">
+        <tbody>
+          <tr><th>Montag</th><td>11.00–14.00 · 17.00–23.00</td></tr>
+          <tr><th>Dienstag</th><td>11.00–14.00 · 17.00–23.00</td></tr>
+          <tr><th>Mittwoch</th><td>11.00–14.00 · 17.00–23.00</td></tr>
+          <tr><th>Donnerstag</th><td>11.00–14.00 · 17.00–23.00<br><i>Bar ab 21.30</i></td></tr>
+          <tr><th>Freitag</th><td>11.00–14.00 · 17.00–23.00<br><i>Bar ab 21.30</i></td></tr>
+          <tr><th>Samstag</th><td>11.00–14.00 · 17.00–23.00<br><i>Bar ab 21.30</i></td></tr>
+          <tr class="is-closed"><th>Sonntag</th><td>geschlossen</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ccol">
+      <h3>Adresse</h3>
+      <address>
+        Gasthaus Sternen<br>
+        Hauptstrasse 70<br>
+        CH-9113 Degersheim<br><br>
+        <a href="tel:+41715656076" data-cursor="link">+41 71 565 60 76</a><br>
+        <a href="mailto:info@sternen-degersheim.ch" data-cursor="link">info@sternen-degersheim.ch</a>
+      </address>
+    </div>
+    <div class="ccol">
+      <h3>Gut zu wissen</h3>
+      <ul class="notes">
+        <li>Sonntag ist Ruhetag.</li>
+        <li>24. und 25. Dezember geschlossen.</li>
+        <li>1. bis 6. Januar geschlossen, ab 7. Januar wieder offen.</li>
+        <li>Gästezimmer direkt buchbar.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <img src="assets/img/logo-sternen.webp" alt="Logo Gasthaus Sternen Degersheim" class="foot__logo" width="227" height="100">
+    <p class="foot__claim">Gutbürgerliche Küche · Bar · Gästezimmer · Degersheim</p>
+  </div>
+  <div class="foot__bar">
+    <p>© 2026 Gasthaus Sternen, Degersheim</p>
+    <p class="foot__demo">Gestaltungsentwurf — WinWebdesign</p>
+  </div>
+</footer>
+
+<!-- ══════════ Schnellzugriff unten rechts ══════════
+     [KUNDE BESTÄTIGT: Ist 071 565 60 76 auch die WhatsApp-Nummer?
+     Falls WhatsApp Business auf einer anderen Nummer läuft, hier eintragen.] -->
+<div class="dock" id="dock">
+  <a class="dock__btn dock__btn--wa" href="https://wa.me/41715656076"
+     target="_blank" rel="noopener" data-cursor="link" aria-label="Uns über WhatsApp schreiben">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span class="dock__label">WhatsApp</span>
+  </a>
+  <button class="dock__btn dock__btn--top" id="toTop" data-cursor="link"
+          aria-label="Zurück nach oben" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V6m0 0-6.5 6.5M12 6l6.5 6.5" fill="none" stroke="currentColor"
+            stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span class="dock__label">Nach oben</span>
+  </button>
+</div>
+
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<!-- Bewusst kein type="module": so läuft die Seite auch per Doppelklick über file://,
+     wo Chrome Modul-Skripte blockiert. Three.js wird darin dynamisch nachgeladen. -->
+<script src="assets/js/app.js" defer></script>
+<script>
+/* Reissleine: Sollte app.js aus irgendeinem Grund nicht laufen, darf der Ladevorhang
+   die Seite nicht dauerhaft verdecken. Nach 6 Sekunden wird er in jedem Fall entfernt. */
+setTimeout(function(){
+  var l = document.getElementById('loader');
+  if (l && getComputedStyle(l).display !== 'none' && document.body.classList.contains('is-loading')){
+    l.style.display = 'none';
+    document.body.classList.remove('is-loading');
+  }
+}, 6000);
+</script>
+</body>
+</html>

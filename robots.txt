@@ -1,0 +1,10 @@
+# Gestaltungsentwurf von WinWebdesign. Kein veroeffentlichter Auftritt.
+# Googlebot und Bingbot duerfen lesen, damit sie das noindex ueberhaupt sehen.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Disallow: /

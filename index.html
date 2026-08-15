@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zwei Häuser im Toggenburg — Gestaltungsentwurf</title>
+<meta name="theme-color" content="#12100E">
+<link rel="icon" href="sternen/assets/img/stern.png" type="image/png">
+<link rel="stylesheet" href="sternen/assets/fonts/fonts.css">
+<style>
+:root{
+  --ink:#12100E; --ox:#6E1F26; --cream:#F1E5D0; --brass:#C1954A; --brass-l:#E3C482;
+  --amber:#E8A020; --paper:#FAF6EC;
+  --f-d:'Fraunces','Iowan Old Style',Georgia,serif;
+  --f-u:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --e:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--cream);font-family:var(--f-u);
+  font-weight:350;line-height:1.6;-webkit-font-smoothing:antialiased;
+  min-height:100svh;display:flex;flex-direction:column}
+a{color:inherit}
+img{display:block;max-width:100%}
+::selection{background:var(--ox);color:var(--cream)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:4px;border-radius:3px}
+
+.kopf{padding:clamp(2.2rem,7vh,4.5rem) clamp(1.2rem,5vw,4rem) clamp(1.6rem,4vh,2.6rem);
+  max-width:1400px;margin-inline:auto;width:100%}
+.marke{display:flex;align-items:center;gap:.6rem;margin-bottom:clamp(1.4rem,4vh,2.4rem)}
+.marke img{width:16px;filter:brightness(0) invert(1);opacity:.8}
+.marke span{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;opacity:.55}
+h1{margin:0 0 .9rem;font-family:var(--f-d);font-weight:400;
+  font-size:clamp(2.1rem,6.5vw,4.4rem);line-height:.98;letter-spacing:-.035em;
+  font-variation-settings:'opsz' 120,'SOFT' 22,'WONK' 1}
+h1 em{font-style:italic;color:var(--brass-l)}
+.lead{margin:0;max-width:52ch;opacity:.72;font-size:clamp(.95rem,1.3vw,1.08rem)}
+
+.haeuser{flex:1;display:grid;gap:1px;background:rgba(241,229,208,.14);
+  grid-template-columns:1fr;margin-top:clamp(1.6rem,4vh,2.6rem)}
+.haus{position:relative;display:block;text-decoration:none;overflow:hidden;
+  background:var(--ink);min-height:clamp(300px,42svh,460px);isolation:isolate}
+.haus img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transform:scale(1.04);transition:transform 1.3s var(--e),filter 1.3s var(--e);
+  filter:brightness(.5) saturate(.9)}
+.haus:hover img,.haus:focus-visible img{transform:scale(1.09);filter:brightness(.62) saturate(1)}
+.haus__inhalt{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;
+  justify-content:flex-end;padding:clamp(1.4rem,4vw,2.8rem)}
+.haus__ort{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;
+  margin:0 0 .5rem;font-weight:600}
+.haus__name{margin:0 0 .7rem;font-family:var(--f-d);font-weight:400;
+  font-size:clamp(1.9rem,4.6vw,3.2rem);line-height:1;letter-spacing:-.03em}
+.haus__zeile{margin:0 0 1.1rem;font-size:.92rem;opacity:.78;max-width:34ch}
+.haus__los{display:inline-flex;align-items:center;gap:.5rem;font-size:.74rem;
+  letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  padding:.85rem 1.35rem;border:1.5px solid currentColor;border-radius:100px;
+  transition:background-color .4s var(--e),color .4s var(--e);align-self:flex-start}
+.haus--st .haus__ort,.haus--st .haus__los{color:var(--brass-l)}
+.haus--st:hover .haus__los{background:var(--brass-l);color:var(--ink)}
+.haus--so .haus__ort,.haus--so .haus__los{color:var(--amber)}
+.haus--so:hover .haus__los{background:var(--amber);color:var(--ink)}
+.haus::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(18,16,14,.15) 0%,rgba(18,16,14,.55) 55%,rgba(18,16,14,.9) 100%)}
+
+.fuss{padding:clamp(1.2rem,3vh,2rem) clamp(1.2rem,5vw,4rem);
+  max-width:1400px;margin-inline:auto;width:100%;
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-size:.74rem;opacity:.5}
+.fuss p{margin:0;max-width:62ch}
+.fuss a{color:var(--brass-l);text-decoration:none;border-bottom:1px solid currentColor;
+  display:inline-block;padding-bottom:1px}
+
+@media (min-width:800px){
+  .haeuser{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.001ms !important}
+  .haus img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="kopf">
+  <div class="marke">
+    <img src="sternen/assets/img/stern.png" alt="">
+    <span>WinWebdesign · Gestaltungsentwurf</span>
+  </div>
+  <h1>Zwei Häuser.<br><em>Eine Handschrift.</em></h1>
+  <p class="lead">
+    Für das Gasthaus Sternen in Degersheim und das Gästehaus Sonne in Bütschwil.
+    Beide Entwürfe verwenden ausschliesslich Ihre eigenen Fotos.
+  </p>
+</header>
+
+<main class="haeuser">
+  <a class="haus haus--st" href="sternen/index.html">
+    <img src="sternen/assets/img/haus.webp" alt="Das Gasthaus Sternen in Degersheim von aussen">
+    <span class="haus__inhalt">
+      <span class="haus__ort">Degersheim</span>
+      <span class="haus__name">Gasthaus Sternen</span>
+      <span class="haus__zeile">Restaurant, Hühnerstall Bar, sieben Gästezimmer — seit 1903 am selben Platz.</span>
+      <span class="haus__los">Entwurf ansehen →</span>
+    </span>
+  </a>
+
+  <a class="haus haus--so" href="sonne/index.html">
+    <img src="sonne/assets/img/haus.webp" alt="Das Gästehaus Sonne in Bütschwil von aussen">
+    <span class="haus__inhalt">
+      <span class="haus__ort">Bütschwil</span>
+      <span class="haus__name">Gästehaus Sonne</span>
+      <span class="haus__zeile">14 Zimmer ab CHF 106, Check-in rund um die Uhr, Bäckerei-Café im Haus.</span>
+      <span class="haus__los">Entwurf ansehen →</span>
+    </span>
+  </a>
+</main>
+
+<footer class="fuss">
+  <p>Entwurf, kein veröffentlichter Auftritt. Nicht für Suchmaschinen freigegeben.
+    Alle Fotos stammen von den bestehenden Webseiten der abgebildeten Betriebe.</p>
+  <p>Erstellt von <a href="https://www.winwebdesign.ch" rel="noopener">WinWebdesign</a></p>
+</footer>
+
+</body>
+</html>

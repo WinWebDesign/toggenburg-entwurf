@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gästehaus Sonne Bütschwil | 14 Zimmer, Check-in rund um die Uhr</title>
+<meta name="description" content="Gästehaus Sonne in Bütschwil: 14 Zimmer ab CHF 106, Check-in am Automaten rund um die Uhr, Frühstücksbuffet und Bäckerei-Café im Haus. Landstrasse 7, 071 980 02 00.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_CH">
+<meta property="og:title" content="Gästehaus Sonne Bütschwil | Check-in rund um die Uhr">
+<meta property="og:description" content="14 Zimmer ab CHF 106 im Toggenburg. Ankommen, wann es passt — der Check-in-Automat ist 24 Stunden offen.">
+<meta property="og:image" content="assets/img/haus.webp">
+<meta name="theme-color" content="#FCF8F1">
+<link rel="icon" href="assets/img/sonne-zeichen.png" type="image/png">
+<link rel="preload" as="image" href="assets/img/haus.webp" fetchpriority="high">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+<!-- ══════════ Ladevorhang: die Strahlen gehen einzeln auf ══════════ -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Seite wird geladen">
+  <div class="loader__panels" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="loader__inner">
+    <img class="loader__sun" src="assets/img/sonne-zeichen.png" alt="" width="420" height="393">
+    <p class="loader__word" aria-hidden="true">
+      <span>S</span><span>o</span><span>n</span><span>n</span><span>e</span>
+    </p>
+    <p class="loader__sub"><em>Originell einfach!</em></p>
+  </div>
+</div>
+
+<!-- ══════════ Navigation ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-cursor="link">
+    <img src="assets/img/sonne-zeichen.png" alt="" class="nav__mark" width="420" height="393">
+    <span class="nav__name">Gästehaus Sonne<em>Bütschwil</em></span>
+  </a>
+  <nav class="nav__links" aria-label="Hauptnavigation">
+    <a href="#checkin" data-cursor="link">Check-in</a>
+    <a href="#zimmer" data-cursor="link">Zimmer</a>
+    <a href="#fruehstueck" data-cursor="link">Frühstück</a>
+    <a href="#restaurant" data-cursor="link">Restaurant</a>
+    <a href="#lage" data-cursor="link">Lage</a>
+  </nav>
+  <a class="btn btn--sm nav__cta" href="#buchen" data-cursor="link"><span>Zimmer anfragen</span></a>
+  <button class="nav__burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="drawer">
+    <i></i><i></i>
+  </button>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="Mobile Navigation">
+    <a href="#checkin">Check-in</a><a href="#zimmer">Zimmer</a><a href="#fruehstueck">Frühstück</a>
+    <a href="#restaurant">Restaurant</a><a href="#lage">Lage</a><a href="#buchen">Anfragen</a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="tel:+41719800200">071 980 02 00</a>
+    <span>Landstrasse 7, 9606 Bütschwil</span>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ══════════════════ 1 · HERO ══════════════════ -->
+<section class="hero" id="hero">
+  <canvas class="hero__gl" id="heroGL" aria-hidden="true"></canvas>
+  <img class="hero__fallback" id="heroFallback" src="assets/img/haus.webp"
+       alt="Das Gästehaus Sonne an der Landstrasse 7 in Bütschwil von oben: ein dunkelrotes Holzhaus mit grünen Fensterläden, Ziegeldach und modernem grauem Anbau mit dem Sonnenzeichen.">
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="hero__wrap">
+    <p class="hero__brow"><span>Bütschwil</span><i>·</i><span>Toggenburg</span><i>·</i><span>seit Generationen ein Gasthaus</span></p>
+    <h1 class="hero__h1" aria-label="Sonne">
+      <span class="ch">S</span><span class="ch">o</span><span class="ch">n</span><span class="ch">n</span><span class="ch">e</span>
+    </h1>
+    <p class="hero__claim"><em>Originell einfach!</em></p>
+    <p class="hero__sub">
+      <span class="lift">Ein Gästehaus zwischen Bed&nbsp;&&nbsp;Breakfast und Hotel.</span>
+      <span class="lift">14 Zimmer. Ab CHF&nbsp;106.</span>
+    </p>
+  </div>
+
+  <div class="hero__foot">
+    <div class="hero__clock" id="heroClock">
+      <img src="assets/img/sonne-zeichen.png" alt="" class="hero__clocksun" width="420" height="393">
+      <span class="hero__time" id="heroTime">--:--</span>
+      <span class="hero__state" id="heroState">Check-in rund um die Uhr</span>
+    </div>
+    <a class="hero__scroll" href="#checkin" data-cursor="link" aria-label="Weiter zum Inhalt">
+      <span>Ankommen</span>
+      <svg viewBox="0 0 24 44" aria-hidden="true"><path d="M12 2v34m0 0-7-7m7 7 7-7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+    </a>
+    <p class="hero__addr">Landstrasse&nbsp;7<br>9606&nbsp;Bütschwil</p>
+  </div>
+</section>
+
+<!-- ══════════════════ 2 · RUND UM DIE UHR ══════════════════ -->
+<section class="clock" id="checkin">
+  <div class="clock__head">
+    <p class="sect-tag"><i></i>Der Unterschied</p>
+    <h2 class="clock__h2">Sie kommen an,<br>wann <em>es passt.</em></h2>
+    <p class="clock__lead">
+      Kein Empfang, der um 18 Uhr schliesst. Kein Anruf, der zu spät kommt. Der Check-in-Automat
+      im Haus ist <b>24 Stunden offen</b> — und nimmt EC, VISA, Mastercard und Maestro.
+    </p>
+  </div>
+
+  <div class="dial-wrap">
+    <div class="dial" id="dial" role="img" aria-label="Sonnenuhr über 24 Stunden. Der Check-in ist zu jeder Stunde möglich.">
+      <svg class="dial__svg" id="dialSvg" viewBox="0 0 560 560" aria-hidden="true">
+        <circle class="dial__ring" cx="280" cy="280" r="212"/>
+        <g id="dialTicks"></g>
+        <g id="dialLabels"></g>
+      </svg>
+      <img class="dial__sun" id="dialSun" src="assets/img/sonne-zeichen.png" alt="" width="420" height="393">
+      <div class="dial__mid">
+        <span class="dial__hour" id="dialHour">--:--</span>
+        <span class="dial__note" id="dialNote">Check-in möglich</span>
+        <span class="dial__hint" id="dialHint">über den Kreis fahren</span>
+      </div>
+    </div>
+
+    <ul class="clock__facts">
+      <li><b>24 h</b><span>Check-in am Automaten, jeden Tag</span></li>
+      <li><b>4</b><span>Zahlungsarten: EC, VISA, Mastercard, Maestro</span></li>
+      <li><b>14</b><span>Zimmer, teilweise mit Bergsicht</span></li>
+      <li><b>0</b><span>Anrufe nötig, wenn es spät wird</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════ 3 · ZIMMER ══════════════════ -->
+<section class="rooms" id="zimmer">
+  <header class="rooms__head">
+    <p class="sect-tag light"><i></i>Übernachten</p>
+    <h2 class="rooms__h2">Vier Zimmer&shy;arten.<br><em>Ein Preis, der stimmt.</em></h2>
+    <p>Alle mit eigenem Bad, alle sauber, alle ohne Schnickschnack. Einige mit Blick auf die Berge.</p>
+  </header>
+
+  <div class="rgrid">
+    <article class="rcard" data-cursor="view">
+      <div class="rcard__img"><img src="assets/img/zi-einzel.webp" alt="Einzelzimmer im Gästehaus Sonne mit hellem Holzbett, Wandbild und Fenster." loading="lazy"></div>
+      <div class="rcard__body">
+        <h3>Einzelzimmer</h3>
+        <ul class="rcard__specs"><li>26 m²</li><li>1 Gast</li><li>1 Bett</li></ul>
+        <p class="rcard__price"><i>ab</i> <b data-count="106">CHF 106</b> <i>/ Nacht</i></p>
+      </div>
+    </article>
+
+    <article class="rcard" data-cursor="view">
+      <div class="rcard__img"><img src="assets/img/zi-doppel.webp" alt="Doppelzimmer im Gästehaus Sonne mit zwei frisch bezogenen Betten nebeneinander." loading="lazy"></div>
+      <div class="rcard__body">
+        <h3>Doppelzimmer</h3>
+        <ul class="rcard__specs"><li>40 m²</li><li>2 Gäste</li><li>2 Betten</li></ul>
+        <p class="rcard__price"><i>ab</i> <b data-count="158">CHF 158</b> <i>/ Nacht</i></p>
+      </div>
+    </article>
+
+    <article class="rcard" data-cursor="view">
+      <div class="rcard__img"><img src="assets/img/zi-zweibett.webp" alt="Zweibettzimmer im Gästehaus Sonne mit zwei getrennten Betten, roten Vorhängen und Fenster." loading="lazy"></div>
+      <div class="rcard__body">
+        <h3>Zweibettzimmer</h3>
+        <ul class="rcard__specs"><li>40 m²</li><li>2 Gäste</li><li>2 Betten</li></ul>
+        <p class="rcard__price"><i>ab</i> <b data-count="158">CHF 158</b> <i>/ Nacht</i></p>
+      </div>
+    </article>
+
+    <article class="rcard" data-cursor="view">
+      <div class="rcard__img"><img src="assets/img/zi-dreibett.webp" alt="Dreibettzimmer im Gästehaus Sonne mit drei Betten, Schreibtisch und roten Vorhängen." loading="lazy"></div>
+      <div class="rcard__body">
+        <h3>Dreibettzimmer</h3>
+        <ul class="rcard__specs"><li>40 m²</li><li>3 Gäste</li><li>3 Betten</li></ul>
+        <p class="rcard__price"><i>ab</i> <b data-count="206">CHF 206</b> <i>/ Nacht</i></p>
+      </div>
+    </article>
+  </div>
+
+  <div class="rooms__strip">
+    <figure style="--r:-1.8deg"><img src="assets/img/zi-einzel-2.webp" alt="Einzelzimmer mit Schreibtisch, Stuhl und Wandfernseher." loading="lazy"></figure>
+    <figure style="--r:1.2deg"><img src="assets/img/bad.webp" alt="Badezimmer mit Dusche, Waschbecken und Milchglastür." loading="lazy"></figure>
+    <figure style="--r:-.7deg"><img src="assets/img/zi-zweibett-2.webp" alt="Zimmer mit Schreibtisch, Spiegel und Blick zur Tür." loading="lazy"></figure>
+    <figure style="--r:2.1deg"><img src="assets/img/zi-dreibett-2.webp" alt="Dreibettzimmer mit Bett, Sitzecke und Fernseher." loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ══════════════════ 4 · FRÜHSTÜCK ══════════════════ -->
+<section class="breakfast" id="fruehstueck">
+  <div class="breakfast__media">
+    <figure class="breakfast__big"><img src="assets/img/buffet-1.webp" alt="Der Frühstücksraum des Gästehauses Sonne mit hellen Holztischen und dem gemalten Bäckerei-Motiv an der Wand." loading="lazy"></figure>
+    <figure class="breakfast__small"><img src="assets/img/buffet-2.webp" alt="Das Frühstücksbuffet mit Säften, Eiern, Gebäck und Kaffeemaschine." loading="lazy"></figure>
+  </div>
+  <div class="breakfast__copy">
+    <p class="sect-tag"><i></i>Frühstück</p>
+    <h2 class="breakfast__h2">Die Bäckerei ist<br><em>im Haus.</em></h2>
+    <p>Unten das Bäckerei-Café, oben das Zimmer. Kürzer ist der Weg zum frischen Gipfeli nirgends.</p>
+    <p class="breakfast__note">Buffet mit Kaffee, Säften, Eiern und Gebäck.
+      <span class="tbd">[Zeiten werden ergänzt]</span></p>
+  </div>
+</section>
+
+<!-- ══════════════════ 5 · RESTAURANT — die Teller auf der Sonnenbahn ══════════════════ -->
+<section class="rest" id="restaurant">
+  <div class="rest__arc" id="restArc" aria-hidden="true">
+    <figure class="disc" data-speed="41" data-off="0"   data-scale=".92"><img src="assets/img/teller-1.webp" alt=""></figure>
+    <figure class="disc" data-speed="-63" data-off="72"  data-scale=".64"><img src="assets/img/teller-2.webp" alt=""></figure>
+    <figure class="disc disc--photo" data-speed="52" data-off="146" data-scale=".5"><img src="assets/img/buffet-2.webp" alt=""></figure>
+    <figure class="disc disc--photo" data-speed="-37" data-off="212" data-scale=".38"><img src="assets/img/haus-strasse.webp" alt=""></figure>
+    <figure class="disc disc--photo" data-speed="47" data-off="288" data-scale=".44"><img src="assets/img/buffet-1.webp" alt=""></figure>
+  </div>
+
+  <div class="rest__mid">
+    <p class="sect-tag"><i></i>Restaurant</p>
+    <h2 class="rest__h2">
+      <span class="lift">Natürliche Zutaten.</span>
+      <span class="lift"><em>Grossmutters</em> Rezepte.</span>
+    </h2>
+    <p class="rest__lead">
+      Täglich frische Menüs, dazu Sandwiches und Salate. Nichts, was erklärt werden muss —
+      und alles, was satt und zufrieden macht.
+    </p>
+    <p class="rest__hinweis">
+      <span class="tbd">[Speisekarte und Öffnungszeiten werden ergänzt]</span>
+    </p>
+    <a class="btn" href="#buchen" data-cursor="link"><span>Tisch oder Zimmer anfragen</span></a>
+  </div>
+</section>
+
+<!-- ══════════════════ 6 · LAGE ══════════════════ -->
+<section class="place" id="lage">
+  <div class="place__marquee" aria-hidden="true">
+    <div class="place__marquee-in" id="marquee">
+      <span>Toggenburg</span><i>☀</i><span>Bütschwil</span><i>☀</i><span>Bergsicht</span><i>☀</i>
+      <span>Toggenburg</span><i>☀</i><span>Bütschwil</span><i>☀</i><span>Bergsicht</span><i>☀</i>
+    </div>
+  </div>
+  <div class="place__grid">
+    <figure class="place__pic"><img src="assets/img/haus-strasse.webp" alt="Das Gästehaus Sonne von der Strasse aus, mit dem Sonnenzeichen an der Fassade." loading="lazy"></figure>
+    <div class="place__copy">
+      <p class="sect-tag"><i></i>Lage</p>
+      <h2 class="place__h2">An der Landstrasse,<br><em>mitten im Toggenburg.</em></h2>
+      <p>Bütschwil liegt zwischen Wil und Wattwil. Wer für die Arbeit kommt, ist schnell wieder weg.
+        Wer zum Wandern kommt, hat die Berge vor der Tür.</p>
+      <ul class="place__list">
+        <li>Direkt an der Landstrasse, Parkplätze am Haus</li>
+        <li>Zimmer teilweise mit Bergsicht</li>
+        <li>Bäckerei-Café im Erdgeschoss</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 7 · ZWEI HÄUSER ══════════════════ -->
+<section class="group" id="gruppe">
+  <header class="group__head">
+    <p class="sect-tag light"><i></i>Zwei Häuser</p>
+    <h2 class="group__h2">Hier schlafen.<br><em>Dort essen.</em></h2>
+    <p>Die Familie Pergega führt im Toggenburg zwei Häuser. 15 Minuten trennen sie.</p>
+  </header>
+  <div class="group__cards">
+    <article class="gcard gcard--self">
+      <div class="gcard__body">
+        <p class="gcard__place">Bütschwil</p>
+        <h3>Gästehaus Sonne</h3>
+        <ul><li>14 Zimmer ab CHF 106</li><li>Check-in rund um die Uhr</li><li>Frühstücksbuffet</li><li>Bäckerei-Café im Haus</li></ul>
+        <p class="gcard__tel">071 980 02 00</p>
+        <p class="gcard__you">Sie sind hier</p>
+      </div>
+    </article>
+    <article class="gcard" data-cursor="view">
+      <div class="gcard__body">
+        <p class="gcard__place">Degersheim</p>
+        <h3>Gasthaus Sternen</h3>
+        <ul><li>Restaurant, 40 Sitzplätze</li><li>Hühnerstall Bar, Do–Sa</li><li>7 Gästezimmer</li><li>Gartenterrasse</li></ul>
+        <p class="gcard__tel">071 565 60 76</p>
+        <p class="gcard__go"><a class="stretch" href="../sternen/index.html">Zum Sternen →</a></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════════════ 8 · BUCHEN ══════════════════ -->
+<section class="book" id="buchen">
+  <div class="book__cta">
+    <h2 class="book__h2">Zimmer frei?<br><em>Fragen Sie kurz.</em></h2>
+    <div class="book__acts">
+      <a class="btn btn--big" href="tel:+41719800200" data-cursor="link"><span>071 980 02 00</span></a>
+      <a class="btn btn--ghost btn--big" href="mailto:info@gaestehaus-sonne.ch" data-cursor="link"><span>E-Mail schreiben</span></a>
+    </div>
+  </div>
+
+  <div class="book__cols">
+    <div class="bcol">
+      <h3>Preise pro Nacht</h3>
+      <table class="prices">
+        <tbody>
+          <tr><th>Einzelzimmer</th><td><i>26 m², 1 Gast</i></td><td class="p">CHF 106</td></tr>
+          <tr><th>Doppelzimmer</th><td><i>40 m², 2 Gäste</i></td><td class="p">CHF 158</td></tr>
+          <tr><th>Zweibettzimmer</th><td><i>40 m², 2 Gäste</i></td><td class="p">CHF 158</td></tr>
+          <tr><th>Dreibettzimmer</th><td><i>40 m², 3 Gäste</i></td><td class="p">CHF 206</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bcol">
+      <h3>Adresse</h3>
+      <address>
+        Gästehaus Sonne AG<br>
+        Landstrasse 7<br>
+        9606 Bütschwil<br><br>
+        <a href="tel:+41719800200" data-cursor="link">+41 71 980 02 00</a><br>
+        <a href="mailto:info@gaestehaus-sonne.ch" data-cursor="link">info@gaestehaus-sonne.ch</a><br>
+        <a href="https://www.instagram.com/gaestehaus.sonne/" rel="noopener" data-cursor="link">@gaestehaus.sonne</a>
+      </address>
+    </div>
+    <div class="bcol">
+      <h3>Check-in</h3>
+      <ul class="notes">
+        <li>Am Automaten, rund um die Uhr.</li>
+        <li>EC-Karte, VISA, Mastercard, Maestro.</li>
+        <li>Kein Empfang nötig, keine feste Ankunftszeit.</li>
+        <li>Zimmer teilweise mit Bergsicht.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__top">
+    <img src="assets/img/sonne-zeichen.png" alt="Zeichen des Gästehauses Sonne" class="foot__mark" width="420" height="393">
+    <p class="foot__claim"><em>Originell einfach!</em> · Zimmer · Frühstück · Restaurant · Bütschwil</p>
+  </div>
+  <div class="foot__bar">
+    <p>© 2026 Gästehaus Sonne AG, Bütschwil</p>
+    <p class="foot__demo">Gestaltungsentwurf — WinWebdesign</p>
+  </div>
+</footer>
+
+<!-- ══════════ Schnellzugriff unten rechts ══════════
+     [KUNDE BESTÄTIGT: Ist 071 980 02 00 auch die WhatsApp-Nummer?
+     Falls WhatsApp Business auf einer anderen Nummer läuft, hier eintragen.] -->
+<div class="dock" id="dock">
+  <a class="dock__btn dock__btn--wa" href="https://wa.me/41719800200"
+     target="_blank" rel="noopener" data-cursor="link" aria-label="Uns über WhatsApp schreiben">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span class="dock__label">WhatsApp</span>
+  </a>
+  <button class="dock__btn dock__btn--top" id="toTop" data-cursor="link"
+          aria-label="Zurück nach oben" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V6m0 0-6.5 6.5M12 6l6.5 6.5" fill="none" stroke="currentColor"
+            stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span class="dock__label">Nach oben</span>
+  </button>
+</div>
+
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<!-- Bewusst kein type="module": läuft so auch per Doppelklick über file://. -->
+<script src="assets/js/app.js" defer></script>
+<script>
+setTimeout(function(){
+  var l = document.getElementById('loader');
+  if (l && getComputedStyle(l).display !== 'none' && document.body.classList.contains('is-loading')){
+    l.style.display = 'none'; document.body.classList.remove('is-loading');
+  }
+}, 6000);
+</script>
+</body>
+</html>
