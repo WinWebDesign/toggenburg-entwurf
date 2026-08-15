@@ -19,13 +19,14 @@
 # swissdrives, jimport und wwd-bot bleiben unveraendert geschuetzt.
 # Der Schutz gegen Suchmaschinen bleibt vollstaendig: siehe Abschnitt 1 und die
 # meta-robots-Angaben in jeder Datei.
+# Wortlaut wie bei swissdrives und wwd-bot, die nachweislich offen sind:
+# "Satisfy Any" steht UNBEDINGT davor. Nur im 2.2-Zweig genuegt es nicht —
+# auf LiteSpeed ist mod_authz_core geladen, der Zweig laeuft dann nie.
+Satisfy Any
 <IfModule mod_authz_core.c>
-  # Apache 2.4 und LiteSpeed
   Require all granted
 </IfModule>
 <IfModule !mod_authz_core.c>
-  # Apache 2.2
-  Satisfy any
   Order allow,deny
   Allow from all
 </IfModule>
