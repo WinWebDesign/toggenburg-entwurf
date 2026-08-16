@@ -13,6 +13,10 @@
   --paper:#FCF8F1;  --paper-2:#F4ECDD;  --paper-3:#EADFC9;
   --ink:#1B1815;    --graphite:#33322F; --graphite-2:#22211F;
   --amber:#E8A020;  --amber-l:#F6C86A;  --amber-d:#B87A12;
+  /* Kleinschrift auf Papier: #B87A12 ergibt nur 3,40:1, noetig sind 4,5.
+     #96680C bringt 4,63:1 und bleibt erkennbar Bernstein. Grosse Schrift
+     (ab 24px) darf weiter das hellere --amber-d verwenden, dort genuegen 3:1. */
+  --amber-txt:#96680C;
   --rot:#B8442C;    --gruen:#3D5245;    --holz:#C09256;
 
   --f-ui:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -151,7 +155,7 @@ p{margin:0 0 1em}
 .sect-tag{
   display:flex; align-items:center; gap:.6rem; margin:0 0 1.4rem;
   font-size:.7rem; letter-spacing:.26em; text-transform:uppercase; font-weight:600;
-  color:var(--amber-d);
+  color:var(--amber-txt);
 }
 .sect-tag i{width:24px; height:2px; background:currentColor; display:block; flex:none}
 .sect-tag.light{color:var(--amber-l)}
@@ -356,7 +360,7 @@ p{margin:0 0 1em}
 .gcard--self:hover{transform:none; border-color:rgba(27,24,21,.16)}
 .gcard__body{padding:clamp(1.4rem,3vw,2.2rem)}
 .gcard__place{font-size:.7rem; letter-spacing:.26em; text-transform:uppercase;
-  color:var(--amber-d); font-weight:600; margin-bottom:.4rem}
+  color:var(--amber-txt); font-weight:600; margin-bottom:.4rem}
 .gcard__body h3{font-size:clamp(1.5rem,3vw,2.1rem); margin-bottom:1.1rem}
 .gcard ul{list-style:none; margin:0 0 1.2rem; padding:0; display:grid; gap:.42rem}
 .gcard li{font-size:.9rem; opacity:.72; padding-left:1.1rem; position:relative}
@@ -366,7 +370,7 @@ p{margin:0 0 1em}
 .gcard__you,.gcard__go{margin:0; font-size:.74rem; letter-spacing:.16em; text-transform:uppercase;
   font-weight:600}
 .gcard__you{opacity:.42}
-.gcard__go{color:var(--amber-d)}
+.gcard__go{color:var(--amber-txt)}
 /* Die ganze Karte wird klickbar, der Link bleibt aber ein echter Link */
 .gcard__go a{text-decoration:none}
 .stretch::after{content:''; position:absolute; inset:0; z-index:1}

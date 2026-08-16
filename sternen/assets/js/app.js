@@ -596,6 +596,13 @@ function initOpenState(){
   const barDay = day >= 4 && day <= 6;      // Do, Fr, Sa
 
   if (day === 0){
+    // Nach Mitternacht laeuft die Samstagnacht in der Bar noch weiter (bis 02.00/03.00).
+    // Ohne diese Zeile stuende dort "Ruhetag", waehrend unten noch ausgeschenkt wird.
+    if (mins < 120){
+      box.classList.add('is-open');
+      out.textContent = 'Hühnerstall Bar noch offen';
+      return;
+    }
     out.textContent = 'Sonntag ist Ruhetag · Montag ab 11.00';
     return;
   }
