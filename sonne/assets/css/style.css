@@ -13,10 +13,11 @@
   --paper:#FCF8F1;  --paper-2:#F4ECDD;  --paper-3:#EADFC9;
   --ink:#1B1815;    --graphite:#33322F; --graphite-2:#22211F;
   --amber:#E8A020;  --amber-l:#F6C86A;  --amber-d:#B87A12;
-  /* Kleinschrift auf Papier: #B87A12 ergibt nur 3,40:1, noetig sind 4,5.
-     #96680C bringt 4,63:1 und bleibt erkennbar Bernstein. Grosse Schrift
-     (ab 24px) darf weiter das hellere --amber-d verwenden, dort genuegen 3:1. */
-  --amber-txt:#96680C;
+  /* Kleinschrift auf Papier. Es gibt drei Papiertoene (#FCF8F1, #F4ECDD,
+     #EADFC9); der Wert muss auf dem dunkelsten noch 4,5:1 erreichen.
+     #845A08: 5,75 / 5,19 / 4,61 — passt ueberall. Grosse Schrift (ab 24px)
+     darf weiter das hellere --amber-d verwenden, dort genuegen 3:1. */
+  --amber-txt:#845A08;
   --rot:#B8442C;    --gruen:#3D5245;    --holz:#C09256;
 
   --f-ui:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -349,7 +350,7 @@ p{margin:0 0 1em}
 .group__head{margin-bottom:clamp(2.4rem,6vh,3.6rem)}
 .group__h2{font-size:clamp(2.3rem,5.8vw,4.6rem); margin-bottom:1.1rem}
 .group__h2 em{color:var(--amber-d)}
-.group__head .sect-tag{color:var(--amber-d)}
+.group__head .sect-tag{color:var(--amber-txt)}
 .group__head p{max-width:42ch; opacity:.75}
 .group__cards{display:grid; gap:clamp(1.2rem,2.6vw,2rem); grid-template-columns:1fr}
 .gcard{position:relative;   /* zwingend: sonst deckt .stretch::after die halbe Seite ab */
